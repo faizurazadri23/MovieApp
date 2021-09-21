@@ -24,4 +24,5 @@ ext{
     glide = '4.12.0'
     compile_glide = '4.12.0'
     mkloader = '1.4.0'
+    room = '2.3.0'
 }

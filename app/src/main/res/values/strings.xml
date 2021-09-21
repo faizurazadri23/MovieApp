@@ -8,4 +8,5 @@
     <string name="connection_internet">Koneksi Internet Anda Ada Gangguan</string>
     <string name="txt_keluar">Keluar</string>
     <string name="dialog_exit">Apakah Anda Ingin Keluar?</string>
+    <string name="message_success">Berhasil Menambahkan Ke Favorite</string>
 </resources>

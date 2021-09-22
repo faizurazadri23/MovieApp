@@ -56,7 +56,7 @@ public class AdapterMovie extends RecyclerView.Adapter<AdapterMovie.ViewMovie> {
         }
 
         void setItemMovieBinding(Result result){
-            Glide.with(context).load(BuildConfig.SERVER_IMG + result.getPosterPath()).error(context.getResources().getDrawable(R.drawable.ic_movie)).into(itemMovieBinding.posterPath);
+            Glide.with(context).load(BuildConfig.SERVER_IMG + result.getPosterPath()).into(itemMovieBinding.posterPath);
             itemMovieBinding.title.setText(result.getTitle());
             itemMovieBinding.releaseDate.setText(result.getReleaseDate());
 

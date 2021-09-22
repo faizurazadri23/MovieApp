@@ -28,6 +28,7 @@ public class FavoriteMovieFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         fragmentFavoriteBinding = FragmentFavoriteMovieBinding.inflate(inflater, container, false);
+        getDataFavoriteMovie();
         return fragmentFavoriteBinding.getRoot();
     }
 
@@ -58,5 +59,11 @@ public class FavoriteMovieFragment extends Fragment {
         ViewModelFactory factory = ViewModelFactory.getInstance(activity.getApplication());
 
         return new ViewModelProvider(activity, factory).get(MainViewModel.class);
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        fragmentFavoriteBinding = null;
     }
 }

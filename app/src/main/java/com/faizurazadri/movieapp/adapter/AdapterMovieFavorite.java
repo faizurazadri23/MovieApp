@@ -57,7 +57,7 @@ public class AdapterMovieFavorite extends RecyclerView.Adapter<AdapterMovieFavor
         }
 
         void setItemMovieBinding(Movie result){
-            Glide.with(context).load(BuildConfig.SERVER_IMG + result.getPoster_path()).error(context.getResources().getDrawable(R.drawable.ic_movie)).into(itemMovieBinding.posterPath);
+            Glide.with(context).load(BuildConfig.SERVER_IMG + result.getPoster_path()).into(itemMovieBinding.posterPath);
             itemMovieBinding.title.setText(result.getTitle());
             itemMovieBinding.releaseDate.setText(result.getRelease_date());
 
